@@ -1,10 +1,11 @@
 <?php 
-$servername = "localhost";
-$user		= "root";
-$pasword	= "";
-$db			= "perpustakaan_yuda";
+$servername     = "10.12.12.104";
+$user		= "apps";
+$pasword	= "bismillah";
+$db		= "apps1";
+$port		= "6033";
 
-$koneksi = mysqli_connect($servername,$user, $pasword)
+$koneksi = mysqli_connect($servername.':'.$port,$user, $pasword)
 			or die('gagal terkoneksi'.mysqli_error());
 			
 $database = mysqli_select_db($koneksi, $db)
